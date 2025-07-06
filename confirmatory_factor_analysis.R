@@ -98,31 +98,13 @@ cortest.bartlett(question_data) # Bartlett Test of Sphericity - Reject Null Hypo
 KMO(question_data) # MSA for each item bigger than 0.6 and overall MSA = 0.91
 
 # Step 2 : Determine the number of factors
-eigen_values = eigen(cor(question_data))$values
-var_explained = cumsum(eigen_values)/sum(eigen_values)
-scree(question_data) # 5
-fa.parallel(question_data)
-VSS(question_data) # 5 ή 6 
+scree(question_data,factors = TRUE, pc = FALSE) # 5
 
 # Step 3 : Estimate Models Parameters
 factor_model_fit = principal(question_data,nfactors = 5,rotate = "varimax",scores=TRUE)
 print.psych(factor_model_fit,cut = 0.35, sort = TRUE)
 com_names = names(factor_model_fit$communality)
-val = unname(factor_model_fit$communality)
+val = round(unname(factor_model_fit$communality),2)
 communalities = cbind(com_names,val)
 communalities
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
