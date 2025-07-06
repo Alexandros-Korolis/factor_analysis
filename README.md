@@ -7,3 +7,6 @@ The aim of this project is to explain the theoretical background of factor analy
 ![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/4.png?raw=true)
 ![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/5.png?raw=true)
 ![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/6.png?raw=true)
+![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/7.png?raw=true)
+![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/8.png?raw=true)
+![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/9.png?raw=true)

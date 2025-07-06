@@ -5,10 +5,12 @@ install.packages("psych")
 library(psych)
 install.packages("dplyr")
 library(dplyr)
+install.packages("moments")
+library(moments)
 
 # Check working directory/change working directory
 getwd()
-setwd("C:/Users/admin/Desktop/Factor Analysis Project/BIG5/BIG5")
+setwd("C:/Users/admin/factor_analysis/BIG5/BIG5")
 
 # Import data
 data = read.csv("data.csv",header = TRUE,sep = "")
@@ -56,6 +58,9 @@ ggplot(data = data,mapping = aes(x = age))+
 # Age Distribution Statistics
 summary(data$age)
 
+# Age Skewness
+skewness(data$age)
+
 # Age by Gender
 data %>% group_by(gender) %>% summarise(mean(age))
 
@@ -64,10 +69,16 @@ ggplot(data = data, mapping = aes(x = gender))+
   geom_bar(fill = c("lightpink","lightblue","red"))+
   ylab("Frequency")+ggtitle("Gender Frequency")
 
+# Gender Count
+data %>% group_by(gender) %>% summarise(count = n())
+
 # Hand Barplot
 ggplot(data = data, mapping = aes(x = hand))+
   geom_bar(fill = c("lightpink","lightblue","red"))+
   ylab("Frequency")+ggtitle("Main Hand Frequency")
+
+# Hand count
+data %>% group_by(hand) %>% summarise(count = n())
 
 # Race Frequencies
 data %>% group_by(race) %>% summarise(n = n()) %>% arrange(desc(n))
