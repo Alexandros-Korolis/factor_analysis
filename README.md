@@ -1,6 +1,4 @@
 # factor_analysis
 The aim of this project is to explain the theoretical background of factor analysis and apply the method to a real dataset.
 
-![Alt text](Factor%20Analysis/to/1.png)
-![Alt text](Factor%20Analysis/to/2.png)
-![Alt text](Factor%20Analysis/to/3.png)
+![Alt text](https://github.com/Alexandros-Korolis/factor_analysis/blob/main/Factor%20Analysis/1.png?raw=true)
